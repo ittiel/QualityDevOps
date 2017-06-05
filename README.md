@@ -1,7 +1,7 @@
 
 QaulityDevOPs
 ===============
-QA role in the DevOps wor
+QA role in the DevOps world
 Code examples for John Bryce seminar: http://bit.ly/2sKcnmz
 This is a simple login application (Java/Maven) running on Tomcat
 
