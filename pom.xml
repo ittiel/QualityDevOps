@@ -25,11 +25,62 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
     <build>
         <finalName>LoginWebApp</finalName>
+        <!-- To define the plugin version in your parent POM -->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>2.20</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <!--unit tests plugin-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <testFailureIgnore>false</testFailureIgnore>
+                        <includes>
+                            <include>**/unitTests/*</include>
+                        </includes>
+                    <excludes>
+                        <exclude>**/integrationTests/*</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <!--system test plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.20</version>
+                <configuration>
+                    <includes>
+                        <groups>integrationTests.configurations.IntegrationTestsCategory</groups>
+                        <include>**/integrationTests/*</include>
+                    </includes>
+                    <!--<excludes>-->
+                        <!--<exclude>**/unitTests/**</exclude>-->
+                    <!--</excludes>-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
