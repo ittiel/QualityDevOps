@@ -9,7 +9,7 @@ This is a simple login application (Java/Maven) running on Tomcat
 - Unit tests:
   -   using [surefire](http://maven.apache.org/surefire/maven-surefire-plugin/) maven plugin
   -   runs during the maven 'test' phase
-    >  mvn test
+      >  mvn test
     
 - Integration/System tests:
   - using [failsafe](http://maven.apache.org/surefire/maven-failsafe-plugin/usage.html) maven plugin
