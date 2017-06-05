@@ -15,4 +15,4 @@ This is a simple login application (Java/Maven) running on Tomcat
   - annotated with junit Category "IntegrationTests"
   - runs during the maven 'verify' phase
     ```sh
-    mvn verify
+    mvn verify -Dskip.surefire.tests
