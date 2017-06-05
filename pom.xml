@@ -9,6 +9,9 @@
     <packaging>war</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
+    <properties>
+        <skip.surefire.tests>${skipTests}</skip.surefire.tests>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -47,6 +50,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
+                    <!-- skips surefire tests without skipping failsafe tests.
+         Property value seems to magically default to false -->
+                    <skipTests>${skip.surefire.tests}</skipTests>
                     <testFailureIgnore>false</testFailureIgnore>
                         <includes>
                             <include>**/unitTests/*</include>
@@ -67,9 +73,9 @@
                         <groups>integrationTests.configurations.IntegrationTestsCategory</groups>
                         <include>**/integrationTests/*</include>
                     </includes>
-                    <!--<excludes>-->
-                        <!--<exclude>**/unitTests/**</exclude>-->
-                    <!--</excludes>-->
+                    <excludes>
+                        <exclude>**/unitTests/**</exclude>
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
