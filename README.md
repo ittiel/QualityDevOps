@@ -1,4 +1,4 @@
-QaulityDevOPs
+QualityDevOPs
 ===============
 QA role in the DevOps world
 
