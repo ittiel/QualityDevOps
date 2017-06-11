@@ -54,9 +54,9 @@
          Property value seems to magically default to false -->
                     <skipTests>${skip.surefire.tests}</skipTests>
                     <testFailureIgnore>false</testFailureIgnore>
-                        <includes>
-                            <include>**/unitTests/*</include>
-                        </includes>
+                    <includes>
+                        <include>**/unitTests/*</include>
+                    </includes>
                     <excludes>
                         <exclude>**/integrationTests/*</exclude>
                     </excludes>
@@ -85,6 +85,17 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <!--tomcat 7 - remote deployment plugin-->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>http://52.214.59.186:8080/manager/text</url>
+                    <server>TomcatServer</server>
+                    <path>/LoginWebApp</path>
+                </configuration>
             </plugin>
         </plugins>
     </build>
