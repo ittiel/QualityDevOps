@@ -22,7 +22,8 @@ This is a simple login application (Java/Maven) running on Tomcat
 
       >  mvn failsafe:integration-test
       
-      
+=========
+
 Application is based on http://www.javawebtutor.com/articles/maven/maven_simple_login_application.php
 
      
