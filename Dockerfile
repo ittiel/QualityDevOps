@@ -1,4 +1,4 @@
-from tomcat:8.0
+FROM tomcat:8.0
 
 #Based on https://hub.docker.com/_/tomcat/
 #manager-gui is disabled
