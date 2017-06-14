@@ -220,4 +220,12 @@
             </plugin>
         </plugins>
     </reporting>
+
+    <scm>
+        <connection>scm:svn:https://github.com/ittiel/QualityDevOps.git</connection>
+        <developerConnection>scm:svn:https://github.com/ittiel/QualityDevOps.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/ittiel/QualityDevOps.git</url>
+    </scm>
+
 </project>
