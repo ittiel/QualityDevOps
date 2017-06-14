@@ -270,6 +270,10 @@
             <id>nexus-releases</id>
             <url>http://52.50.68.162:8081/nexus/content/repositories/releases</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://52.50.68.162:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
 
