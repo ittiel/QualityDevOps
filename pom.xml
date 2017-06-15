@@ -6,7 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>quality-and-dev-ops</artifactId>
     <packaging>war</packaging>
-    <version>1.0.19-SNAPSHOT</version>
+    <version>1.0.20-SNAPSHOT</version>
 
     <properties>
         <skip.surefire.tests>${skipTests}</skip.surefire.tests>
@@ -214,6 +214,7 @@
                     <releaseProfiles>releases</releaseProfiles>
                 </configuration>
             </plugin>
+
         </plugins>
 
     </build>
@@ -257,7 +258,7 @@
                         </executions>
                         <configuration>
                             <serverId>nexus-releases</serverId>
-                            <nexusUrl>http://172.31.0.225:8081/nexus/</nexusUrl>
+                            <nexusUrl>http://172.31.0.225:8081/nexus/content/repositories/releases</nexusUrl>
                             <skipStaging>true</skipStaging>
                         </configuration>
                     </plugin>
