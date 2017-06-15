@@ -6,7 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>quality-and-dev-ops</artifactId>
     <packaging>war</packaging>
-    <version>1.0.33-SNAPSHOT</version>
+    <version>1.0.33</version>
 
     <properties>
         <skip.surefire.tests>${skipTests}</skip.surefire.tests>
@@ -283,7 +283,7 @@
         <connection>scm:git:https://github.com/ittiel/QualityDevOps.git</connection>
         <url>https://github.com/ittiel/QualityDevOps</url>
         <developerConnection>scm:git:https://github.com/ittiel/QualityDevOps.git</developerConnection>
-      <tag>v1.0.21</tag>
+      <tag>v1.0.33</tag>
   </scm>
 
 </project>
