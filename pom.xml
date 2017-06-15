@@ -11,7 +11,7 @@
     <properties>
         <skip.surefire.tests>${skipTests}</skip.surefire.tests>
         <tomcat.server>172.31.0.241</tomcat.server>
-        <scm.server>52.50.68.162 </scm.server>
+        <scm.server>172.31.0.225</scm.server>
     </properties>
 
     <dependencies>
