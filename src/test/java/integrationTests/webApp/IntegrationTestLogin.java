@@ -1,6 +1,6 @@
-package integrationTests;
+package integrationTests.webApp;
 
-import integrationTests.configurations.IntegrationTestsCategory;
+import integrationTests.webApp.configurations.IntegrationTestsCategory;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;

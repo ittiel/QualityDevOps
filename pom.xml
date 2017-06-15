@@ -75,9 +75,9 @@
          Property value seems to magically default to false -->
                     <skipTests>${skip.surefire.tests}</skipTests>
                     <testFailureIgnore>false</testFailureIgnore>
-                    <includes>
-                        <include>**/unitTests/*</include>
-                    </includes>
+                    <!--<includes>-->
+                        <!--<include>**/unitTests/**</include>-->
+                    <!--</includes>-->
                     <excludes>
                         <exclude>**/integrationTests/*</exclude>
                     </excludes>
@@ -91,8 +91,8 @@
                 <version>2.20</version>
                 <configuration>
                     <includes>
-                        <groups>integrationTests.configurations.IntegrationTestsCategory</groups>
-                        <include>**/integrationTests/*</include>
+                        <groups>integrationTests.webApp.configurations.IntegrationTestsCategory</groups>
+                        <include>**/integrationTests/**</include>
                     </includes>
                     <excludes>
                         <exclude>**/unitTests/**</exclude>

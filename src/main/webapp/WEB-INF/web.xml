@@ -5,3 +5,9 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
+
+<!--Used only for the sonar security example-->
+<!--<filter>-->
+  <!--<filter-name>loginFilter</filter-name>-->
+  <!--<filter-class>edu.umd.enpm613.servlet.LoginFilter</filter-class>-->
+<!--</filter>-->
