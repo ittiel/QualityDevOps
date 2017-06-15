@@ -6,7 +6,6 @@ Code examples for John Bryce seminar: http://bit.ly/2sKcnmz
 This is a simple login application (Java/Maven) running on Tomcat
 # Phases:
 =========
-# Running tests (JUnit)
 - Unit tests:
   -   using [surefire](http://maven.apache.org/surefire/maven-surefire-plugin/) maven plugin
   -   runs during the maven 'test' phase
