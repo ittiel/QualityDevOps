@@ -6,7 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>quality-and-dev-ops</artifactId>
     <packaging>war</packaging>
-    <version>1.0.21-SNAPSHOT</version>
+    <version>1.0.25-SNAPSHOT</version>
 
     <properties>
         <skip.surefire.tests>${skipTests}</skip.surefire.tests>
