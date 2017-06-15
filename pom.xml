@@ -258,7 +258,7 @@
                         </executions>
                         <configuration>
                             <serverId>releases</serverId>
-                            <nexusUrl>http://172.31.0.225:8081/nexus/content/repositories/releases</nexusUrl>
+                            <nexusUrl>http://${scm.server}:8081/nexus/content/repositories/releases</nexusUrl>
                             <skipStaging>true</skipStaging>
                         </configuration>
                     </plugin>
