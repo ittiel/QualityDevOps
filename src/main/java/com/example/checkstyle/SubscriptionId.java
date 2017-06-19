@@ -14,6 +14,16 @@ public class SubscriptionId {
         END_USER_NAI("3"),
         END_USER_PRIVATE("4");
 
+        public void guessTheOutput()
+        {
+            int whichIsWhich = 0;
+            {
+                whichIsWhich = 2;
+            }
+            System.out.println("value = " + whichIsWhich);
+        }
+
+
         private String key;
 
         private static final Map lookup = new HashMap();
