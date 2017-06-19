@@ -29,12 +29,16 @@ public class ScaryRankBugs {
     /**
      * Incorrect assignment in if condition.
      */
-    private static void incorrectAssignmentInIfCondition() {
+    public static String incorrectAssignmentInIfCondition() {
+        String s;
         boolean value = false;
         if (value = true) {
             //do Something
+            s = "true";
         } else {
             //else Do Something
+            s = "false";
         }
+        return null;
     }
 }
