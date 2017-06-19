@@ -12,7 +12,7 @@ public class ITTestWebApp {
 
     @Test
     public void testWebApp(){
-        assertEquals(ScaryRankBugs.incorrectAssignmentInIfCondition(), "true");
+        assertEquals(ScaryRankBugs.incorrectAssignmentInIfCondition(true), "true");
 
 
     }
