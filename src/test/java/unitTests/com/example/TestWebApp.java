@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Created by ittiel on 6/19/17.
  */
-public class ITTestWebApp {
+public class TestWebApp {
 
     @Test
     public void testWebApp(){
