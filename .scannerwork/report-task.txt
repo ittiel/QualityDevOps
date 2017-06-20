@@ -2,5 +2,5 @@ projectKey=QualityDevOPs
 serverUrl=http://localhost:9000
 serverVersion=6.4.0.25310
 dashboardUrl=http://localhost:9000/dashboard/index/QualityDevOPs
-ceTaskId=AVysPbv-wIFrTo504U5R
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVysPbv-wIFrTo504U5R
+ceTaskId=AVzEtAGA-q7jMsD3GaHm
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVzEtAGA-q7jMsD3GaHm
