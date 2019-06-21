@@ -12,7 +12,9 @@
         <skip.surefire.tests>${skipTests}</skip.surefire.tests>
         <tomcat.server>172.31.0.241</tomcat.server>
         <scm.server>172.31.0.225</scm.server>
-    </properties>
+  	<maven.compiler.source>1.6</maven.compiler.source>
+  	<maven.compiler.target>1.6</maven.compiler.target>
+   </properties>
 
     <dependencies>
         <dependency>
